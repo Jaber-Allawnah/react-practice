@@ -6,25 +6,12 @@ import { useState } from 'react';
 function App() {
   const [myXValue,setmyXValue]=useState(0);
   const increaseMyXValue=()=>{
-      setmyXValue(
-          ()=>{
-              const newValue=myXValue+1;
-              return newValue;
-
-          }
-      );
-      console.log(myXValue);
+      setmyXValue(myXValue+1);
   }
   const decreaseMyXValue=()=>{
-    setmyXValue(()=>{
-      const newValue=myXValue-1;
-      if(myXValue<=0)
-      return 0;
-
-      return newValue;
-
-    })
-    console.log(myXValue);
+    setmyXValue(myXValue-1)
+    if(myXValue<=0)
+      setmyXValue(0);
 
   }
 
