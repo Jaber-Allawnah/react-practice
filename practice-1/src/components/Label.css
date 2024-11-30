@@ -1,0 +1,7 @@
+.label{
+    background-color:  rgb(157, 151, 151);
+    min-width: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    border: 0.1rem solid  rgb(86, 85, 85);
+}
